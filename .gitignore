@@ -1,0 +1,60 @@
+# === Binaries ===
+# сборочные артефакты и исполняемые файлы
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# папки с бинарями/сборкой
+/bin/
+build/
+dist/
+
+# === Go / tools / coverage ===
+# файлы покрытия и профилировщика
+coverage.out
+*.prof
+
+# тестовые бинарники
+*_test
+
+# зависимости (опционально — если вы не вендорите, можно убрать)
+vendor/
+Godeps/
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Env / secrets (локальные конфиги) ===
+.env
+.env.*.local
+*.secret
+
+# SSL / key files (локальные, не пушить)
+*.pem
+*.key
+*.crt
+
+# === Logs / temp ===
+*.log
+tmp/
+tmp-*/
+
+# === Misc ===
+# рабочие/IDE артефакты
+*.workspace
+
+# Node artifacts (если в монорепо есть frontend)
+node_modules/
